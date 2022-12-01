@@ -1,0 +1,4 @@
+The largest natural number seen was 5
+The largest natural number seen was 2
+The largest natural number seen was 5
+The largest natural number seen was 2
