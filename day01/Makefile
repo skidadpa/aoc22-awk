@@ -11,6 +11,7 @@ results.txt : $(PROGRAMS) $(INPUTS)
 	./one.awk input.txt >> $@
 	./two.awk sample.txt >> $@
 	./two.awk input.txt >> $@
+	cat $@
 
 clean:
 	$(RM) results.txt
