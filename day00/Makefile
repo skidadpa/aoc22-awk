@@ -1,4 +1,4 @@
-.PHONY: test
+.PHONY: test clean update
 
 test : expected.txt results.txt
 	diff -s expected.txt results.txt
@@ -14,3 +14,6 @@ results.txt : $(PROGRAMS) $(INPUTS)
 
 clean:
 	$(RM) results.txt
+
+update: results.txt
+	cp $< expected.txt
